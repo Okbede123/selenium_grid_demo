@@ -53,7 +53,7 @@ public class DemoGrid {
         cOptions.addArguments("--start-maximized");
         cOptions.merge(desiredCapabilities);
         try {
-            driver = new RemoteWebDriver(new URL("http://192.168.1.4:4444/wd/hub"), cOptions);
+            driver = new RemoteWebDriver(new URL("http://192.168.1.78:6666"), cOptions);
             driver.get("https://www.quangcaogiatot.com");
             System.out.println(driver.getTitle());
             Thread.sleep(10000);
